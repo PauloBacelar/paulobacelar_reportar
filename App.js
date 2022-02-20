@@ -1,13 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Navbar from "./components/Navbar";
+import Form from "./components/Form/Form";
 
 const App = () => {
   return (
     <View style={styles.screen}>
       <Navbar />
-
-      <Text>Example text</Text>
+      <Form />
     </View>
   );
 };
