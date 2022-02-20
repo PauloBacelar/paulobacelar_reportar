@@ -6,6 +6,8 @@ const App = () => {
   return (
     <View style={styles.screen}>
       <Navbar />
+
+      <Text>Example text</Text>
     </View>
   );
 };
