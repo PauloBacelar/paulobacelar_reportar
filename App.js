@@ -17,7 +17,6 @@ const App = () => {
 const styles = StyleSheet.create({
   screen: {
     backgroundColor: "#f8f8f8",
-    marginTop: 25,
   },
 });
 

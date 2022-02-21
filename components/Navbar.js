@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 
   text: {
     color: "white",
-    fontFamily: "Roboto",
+    fontFamily: "Ubuntu",
     width: "100%",
     textAlign: "center",
     fontWeight: "500",

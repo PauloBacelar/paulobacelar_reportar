@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     marginBottom: 24,
-    alignItems: "flex-start",
+    alignItems: "center",
   },
 
   radio: {
