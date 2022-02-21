@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     height: 48,
     backgroundColor: "#006557",
     marginBottom: 32,
+    position: "relative",
   },
 
   content: {
@@ -30,10 +31,11 @@ const styles = StyleSheet.create({
 
   text: {
     color: "white",
-    fontFamily: "Ubuntu",
+    fontFamily: "Roboto",
     width: "100%",
     textAlign: "center",
     fontWeight: "500",
+    position: "absolute",
   },
 });
 

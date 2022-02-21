@@ -9,7 +9,7 @@ const App = () => {
     <View style={styles.screen}>
       <Navbar />
       <Form />
-      <FlashMessage position="top" />
+      <FlashMessage position="top" marginTop={25} />
     </View>
   );
 };
@@ -17,7 +17,7 @@ const App = () => {
 const styles = StyleSheet.create({
   screen: {
     backgroundColor: "#f8f8f8",
-    flex: 1,
+    marginTop: 25,
   },
 });
 

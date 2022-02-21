@@ -3,16 +3,16 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 const RadioInput = (props) => {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.radio}
-        onPress={() => props.setSelect(props.id)}
-      >
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => props.setSelect(props.id)}
+    >
+      <View style={styles.radio}>
         {props.selected ? <View style={styles.radioInside} /> : null}
-      </TouchableOpacity>
+      </View>
 
       <Text style={styles.text}>{props.label}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     marginBottom: 24,
+    alignItems: "flex-start",
   },
 
   radio: {

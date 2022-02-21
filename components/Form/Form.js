@@ -53,15 +53,15 @@ const Form = () => {
         />
 
         <TextUserInput
-          paddingBottom="1rem"
+          paddingBottom={16}
           placeholder="Título"
           value={title}
           setValue={setTitle}
         />
         <TextUserInput
-          paddingBottom="7rem"
+          paddingBottom={112}
           placeholder="Especifique aqui o que houve."
-          style={{ marginBottom: "2rem" }}
+          style={{ marginBottom: 32 }}
           value={description}
           setValue={setDescription}
         />
@@ -82,7 +82,8 @@ const Form = () => {
 
 const styles = StyleSheet.create({
   content: {
-    marginHorizontal: 24,
+    marginLeft: 24,
+    marginRight: 36,
   },
 
   button: {
