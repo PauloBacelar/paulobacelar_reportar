@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Button } from "react-native-paper";
+import { showMessage, hideMessage } from "react-native-flash-message";
 import RadioInput from "./RadioInput";
 import TextUserInput from "./TextUserInput";
 
@@ -48,7 +49,14 @@ const Form = () => {
         <Button
           uppercase={false}
           mode="contained"
-          onPress={() => console.log("Pressed")}
+          onPress={() => {
+            showMessage({
+              message: "Informe enviado com sucesso!",
+              description:
+                "Utilizaremos seu feedback para melhorarmos a qualidade do nosso serviço.",
+              type: "success",
+            });
+          }}
           color="#07689f"
           style={styles.button}
         >
