@@ -10,6 +10,26 @@ const Form = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
+  const handleSubmit = () => {
+    if (radioOption) {
+      showMessage({
+        message: "Informe enviado com sucesso!",
+        description:
+          "Utilizaremos seu feedback para melhorarmos a qualidade do nosso serviço.",
+        type: "success",
+      });
+    } else {
+      showMessage({
+        message: "Selecione uma opção de feedback!",
+        description: "Precisamos saber como devemos melhorar o nosso serviço.",
+        type: "danger",
+      });
+    }
+
+    setTitle("");
+    setDescription("");
+  };
+
   return (
     <View>
       <View style={styles.content}>
@@ -49,14 +69,7 @@ const Form = () => {
         <Button
           uppercase={false}
           mode="contained"
-          onPress={() => {
-            showMessage({
-              message: "Informe enviado com sucesso!",
-              description:
-                "Utilizaremos seu feedback para melhorarmos a qualidade do nosso serviço.",
-              type: "success",
-            });
-          }}
+          onPress={() => handleSubmit()}
           color="#07689f"
           style={styles.button}
         >
