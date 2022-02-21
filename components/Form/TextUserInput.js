@@ -17,15 +17,15 @@ const TextUserInput = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: "1.25rem",
+    marginBottom: 20,
   },
 
   input: {
     borderWidth: 1,
     borderRadius: 2,
     borderColor: "#dedede",
-    paddingHorizontal: "1rem",
-    paddingTop: "1rem",
+    paddingHorizontal: 16,
+    paddingTop: 16,
   },
 });
 

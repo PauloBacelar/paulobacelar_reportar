@@ -82,12 +82,12 @@ const Form = () => {
 
 const styles = StyleSheet.create({
   content: {
-    marginHorizontal: "1.5rem",
+    marginHorizontal: 24,
   },
 
   button: {
     borderRadius: 2,
-    height: "2.5rem",
+    height: 40,
     justifyContent: "center",
   },
 

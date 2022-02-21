@@ -16,13 +16,13 @@ const Navbar = () => {
 
 const styles = StyleSheet.create({
   header: {
-    height: "3rem",
+    height: 48,
     backgroundColor: "#006557",
-    marginBottom: "2rem",
+    marginBottom: 32,
   },
 
   content: {
-    marginHorizontal: "1.5rem",
+    marginHorizontal: 24,
     height: "100%",
     flexDirection: "row",
     alignItems: "center",

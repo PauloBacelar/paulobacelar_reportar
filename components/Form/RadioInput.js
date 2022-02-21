@@ -21,30 +21,30 @@ export default RadioInput;
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    marginBottom: "1.5rem",
+    marginBottom: 24,
   },
 
   radio: {
-    height: "1rem",
-    width: "1rem",
-    borderRadius: "0.25rem",
+    height: 16,
+    width: 16,
+    borderRadius: 4,
     borderWidth: 2,
     borderColor: "#d3d3d3",
     alignItems: "center",
     justifyContent: "center",
-    marginRight: "0.5rem",
+    marginRight: 8,
   },
 
   radioInside: {
-    height: "0.6rem",
-    width: "0.6rem",
+    height: 9.5,
+    width: 9.5,
     borderRadius: 0,
     backgroundColor: "#006557",
-    borderRadius: "0.1rem",
+    borderRadius: 1.6,
   },
 
   text: {
-    fontSize: "1rem",
+    fontSize: 16,
     fontFamily: "ubuntu",
     color: "#424f4d",
   },
