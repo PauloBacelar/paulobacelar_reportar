@@ -52,7 +52,6 @@ $ npm start
 
 This project uses the following technologies:
 
-- CSS
 - Javascript
 - React Native
 
