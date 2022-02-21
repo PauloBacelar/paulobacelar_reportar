@@ -5,7 +5,8 @@ const TextUserInput = (props) => {
   return (
     <View style={styles.container}>
       <TextInput
-        value=""
+        value={props.value}
+        onChangeText={props.setValue}
         style={[styles.input, { paddingBottom: props.paddingBottom }]}
         placeholder={props.placeholder}
         placeholderTextColor="#6d7a78"

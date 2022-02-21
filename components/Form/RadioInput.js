@@ -1,12 +1,15 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 const RadioInput = (props) => {
   return (
     <View style={styles.container}>
-      <View style={styles.radio}>
+      <TouchableOpacity
+        style={styles.radio}
+        onPress={() => props.setSelect(props.id)}
+      >
         {props.selected ? <View style={styles.radioInside} /> : null}
-      </View>
+      </TouchableOpacity>
 
       <Text style={styles.text}>{props.label}</Text>
     </View>
